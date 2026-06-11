@@ -13,8 +13,16 @@ yum list available | grep mysql
 if [ $? -eq 0 ]
 then
     echo "MySQL package is available and ready to install"
-    yum install mysql -y
 else
     echo "MySQL package is not available in the yum repository, please check your repository settings"
 fi
+    yum list installed | grep mysql -y
+if [ $? -eq 0 ]
+then
+    echo "MySQL package is already installed"
+else
+    echo "MySQL package is not installed"
+fi
+
+
 
