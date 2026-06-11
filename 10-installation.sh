@@ -5,6 +5,7 @@ USERID=$(id -u) # this command gets the user ID of the current user and stores i
 if [ $USERID -eq 0 ]
 then
     echo "you are root user, you can do anything..."
+    exit 1
 else
     echo "you are not root user, you cannot install the software..."
 
