@@ -25,6 +25,9 @@ else
 fi
 
 if [ $? -neq 0 ]
-
-
-
+then
+    echo "Installing MySQL package..."
+    yum install mysql -y
+else
+    echo "MySQL package is already installed, skipping installation"
+fi
