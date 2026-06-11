@@ -6,7 +6,7 @@
 # -ge - greater than or equal to
 # -le - less than or equal to
 
-if [ $NUMBER: -lt 100]
+if [ "$NUMBER: -lt 100" ]
 then
     echo "The given number $NUMBER  is less than 100"
 
