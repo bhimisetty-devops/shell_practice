@@ -24,7 +24,7 @@ else
     echo "MySQL package is not installed"
 fi
 
-if [ $? -neq 0 ]
+if [ $? -eq 1 ]
 then
     echo "Installing MySQL package..."
     yum install mysql -y
