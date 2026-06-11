@@ -24,5 +24,7 @@ else
     echo "MySQL package is not installed"
 fi
 
+if [ $? -neq 0 ]
+
 
 
