@@ -11,4 +11,10 @@ else
     exit 1
 fi
 
-dnf install mysql -y
+yum list available | grep mysql # this command lists all the available packages in the yum repository.
+if [ $? -eq 0 ] # this checks the exit status of the previous command,
+then
+    echo "my sql package is available and ready to install..."
+    yum install mysql -y # this command installs the mysql package using yum.
+else
+    echo "mysql package is not available in the yum repository, please check your repository settings..." 
