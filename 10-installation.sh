@@ -17,4 +17,6 @@ then
     echo "my sql package is available and ready to install..."
     yum install mysql -y # this command installs the mysql package using yum.
 else
-    echo "mysql package is not available in the yum repository, please check your repository settings..." 
+    echo "mysql package is not available in the yum repository, please check your repository settings..."
+    exit 1
+fi 
