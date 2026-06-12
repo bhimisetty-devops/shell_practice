@@ -16,3 +16,4 @@ then
 else
     echo "bind package installation failed"
     exit 1
+fi
