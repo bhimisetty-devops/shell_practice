@@ -9,10 +9,10 @@ else
     echo "you are not a root user, so please run with root access"
     exit 1
 fi
-yum install screen -y
+yum install bind -y
 if [ $? -eq 0 ]
 then
-    echo "screen package is installed successfully"
+    echo "bind package is installed successfully"
 else
-    echo "screen package installation failed"
+    echo "bind package installation failed"
     exit 1
