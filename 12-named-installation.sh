@@ -24,7 +24,8 @@ else
 
 fi
 
-echo "installing bind package..."
+echo "installing bind
+ package..."
 yum install bind -y
 if [ $? -eq 0 ]
 then
