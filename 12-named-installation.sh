@@ -15,7 +15,7 @@ then
     echo "bind package is already installed, removing it first.."
 else
     echo "bind package is not installed, proceeding with installation..."
-    exit 1
+
 fi
 yum remove bind -y
 if [ $? -eq 0 ]
@@ -27,8 +27,7 @@ else
 
 fi
 
-echo "installing bind
- package..."
+echo "installing bind package..."
 yum install bind -y
 if [ $? -eq 0 ]
 then
