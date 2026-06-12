@@ -9,3 +9,4 @@ else
     echo "you are not a root user, so please run with root access"
     exit 1
 fi
+yum install named -y
